@@ -8,3 +8,10 @@ textarea{
 .btn-group-lg>.btn, .btn-lg {
     padding: 0.5rem 3.5rem;
 }
+
+@media screen and(max-width:500px) {
+    .btn-group-lg>.btn, .btn-lg {
+        padding: 0.5rem 1.6rem;
+    } 
+    
+}
