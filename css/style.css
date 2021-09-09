@@ -1,0 +1,10 @@
+.row .col-lg-6 .figure .figure-img.img-fluid.rounded{
+    width: 650px !important;
+    height: 350px !important;
+}
+textarea{
+    width: 100%;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 0.5rem 3.5rem;
+}

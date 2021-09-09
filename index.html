@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+     
+    <link rel="stylesheet" href="js/fontawesome-all.min.js">
+</head>
+<body class="bg-light py-2 py-lg-5">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4">Bootstrap</h1>
+            <p class="lead">Basic questions for Bootstrap5</p>
+        </div>
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item" role="presentation">
+               <button type="button" class="nav-link h4 w-100 mb-0 active" id="step-1-tab" data-bs-toggle="tab" data-bs-target="#step-1" role="tab"
+                aria-controls="step-1" aria-selected="true">Step 1 <br><small class="d-none d-md-inline">personal-info</small></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button type="button" class="nav-link h4 w-100 mb-0" id="step-2-tab" data-bs-toggle="tab" data-bs-target="#step-2" role="tab"
+                aria-controls="step-2" aria-selected="false">Step 2 <br><small class="d-none d-md-inline">Questions w/answers</small></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button type="button" class="nav-link h4 w-100 mb-0" id="step-3-tab" data-bs-toggle="tab" data-bs-target="#step-3" role="tab"
+                aria-controls="step-3" aria-selected="false">Step 3 <br><small class="d-none d-md-inline">Questions w/ratings</small></button>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade pt-4 show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="form-label">Sex:</label>
+                    <div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="sex" id="sex-male" value="male">
+                        <label class="form-check-label" for="sex-male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="sex" id="sex-female" value="female">
+                        <label class="form-check-label" for="sex-female">Female</label>
+                    </div>
+                </div>
+                </div>
+
+               <div class="col-md-3 mb-3">
+                   <label class="form-label" for="age">Age:</label>
+                   <input type="number" class="form-control" id="age">
+               </div> 
+               <div class="col-md-6 mb-3">
+                <label class="form-label" for="phone">phone:</label>
+                <input type="tel" class="form-control" id="phone">
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Firstname Lastname">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="email">E-mail:</label>
+                    <input type="text" class="form-control" id="email" placeholder="username@domain.com">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 mb-3">
+                    <label class="form-label" for="address">Address:</label>
+                    <input type="text" class="form-control" id="address" placeholder="123 Street Name">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="address">Apartment or Floor:</label>
+                    <input type="text" class="form-control" id="address" placeholder="B3, 4th floor">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="city">City:</label>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label class="form-label" for="city">Zip:</label>
+                    <input type="text" class="form-control" id="city" placeholder="123">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label" for="country">Country:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>-Select Country-</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="japan">Japan</option>
+                      </select>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2">Step 2</button>
+            </div>
+
+            <div class="tab-pane fade pt-4" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+                <h2 class="h5 text-center mb-3">Question #1:  Define what Bootstrap is.</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <figure class="figure">
+                            <img src="./img/img1.webp" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption">A capation for the image</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-1">Answer for radio 1</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-2"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-2">Answer for radio 2</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-3"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-3">Answer for radio 3</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-4"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-4">Answer for radio 4</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-5"
+                            value="option5">
+                            <label class="form-check-label" for="radioButtonsQuestion1-5">
+                                <input type="text" class="form-control form-control-sm" id="radioButtonsQuestion1-other"
+                                placeholder="Other" aria-describedby="radioButtonsQuestion1-other-help">
+                            </label>
+                            <p id="radioButtonsQuestion1-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answers in input field</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <h2 class="h5 text-center mb-3">Question #2:  Why Bootstrap is used for mobile application developments?</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <figure class="figure">
+                            <img src="./img/img2.jpg" class="figure-img img-fluid rounded" height="340px" alt="">
+                            <figcaption class="figure-caption">A capation for the image</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-1">Answer for radio 1</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-2"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-2">Answer for radio 2</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-3"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-3">Answer for radio 3</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-4"
+                            value="option1">
+                            <label class="form-check-label" for="radioButtonsQuestion1-4">Answer for radio 4</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-5"
+                            value="option5">
+                            <label class="form-check-label" for="radioButtonsQuestion1-5">
+                                <input type="text" class="form-control form-control-sm" id="radioButtonsQuestion1-other"
+                                placeholder="Other" aria-describedby="radioButtonsQuestion1-other-help">
+                            </label>
+                            <p id="radioButtonsQuestion1-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answers in input field</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <h2 class="h5 text-center mb-3">Question #3:  Define what Bootstrap grid is.</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <figure class="figure">
+                            <img src="./img/img3.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption">A capation for the image</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-1"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-1">Answer for checkbox 1</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-2"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-2">Answer for checkbox 2</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-3"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-3">Answer for checkbox 3</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-4"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-4">Answer for checkbox 4</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-5"
+                            value="option5">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-5">
+                                <input type="text" class="form-control form-control-sm" id="checkboxButtonsQuestion1-other"
+                                placeholder="Other" aria-describedby="checkboxButtonsQuestion1-other-help">
+                            </label>
+                            <p id="checkboxButtonsQuestion1-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answers in input field</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <h2 class="h5 text-center mb-3">Question #4:  What is the fluid layout?</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <figure class="figure">
+                            <img src="./img/img4.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption">A capation for the image</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-1"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-1">Answer for checkbox 1</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-2"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-2">Answer for checkbox 2</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-3"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-3">Answer for checkbox 3</label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-4"
+                            value="option1">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-4">Answer for checkbox 4</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="checkboxButtonsQuestion1" id="checkboxButtonsQuestion1-5"
+                            value="option5">
+                            <label class="form-check-label" for="checkboxButtonsQuestion1-5">
+                                <input type="text" class="form-control form-control-sm" id="checkboxButtonsQuestion1-other"
+                                placeholder="Other" aria-describedby="checkboxButtonsQuestion1-other-help">
+                            </label>
+                            <p id="checkboxButtonsQuestion1-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answers in input field</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-3">Step 3</button>
+            </div>
+            <div class="tab-pane fade pt-4" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="h5">Question #5: What are responsive utility classes in Bootstrap?</h2>
+                        <p class="small">Responsive utility classes in Bootstrap are a set of classes that are used to conceal or exhibit the HTML elements based on screen resolution that discerns by media query in Bootstrap.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-1"
+                                value="rating-1">
+                                <label class="form-check-label" for="ratingRadioQuestion5-1">1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-2"
+                                value="rating-2">
+                                <label class="form-check-label" for="ratingRadioQuestion5-2">2</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-3"
+                                value="rating-3">
+                                <label class="form-check-label" for="ratingRadioQuestion5-3">3</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-4"
+                                value="rating-4">
+                                <label class="form-check-label" for="ratingRadioQuestion5-4">4</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-5"
+                                value="rating-5">
+                                <label class="form-check-label" for="ratingRadioQuestion5-5">n/a</label>
+                            </div>   
+                        </div>
+                        <label class="visually-hidden" for="ratingRadioQuestion5-comment">Comment:</label>
+                        <textarea class="form-control form-control-sm" id="ratingRadioQuestion5-comment" name="ratingRadioQuestion5" rows="3" placeholder="Write a comment here..."></textarea>
+                    </div>    
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="h5">Question #6: What are Bootstrap alerts?</h2>
+                        <p class="small">Bootstrap alerts are used to create presume alert messages, which add styles to make the messages more noticeable to the user.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-1"
+                                value="rating-1">
+                                <label class="form-check-label" for="ratingRadioQuestion6-1">1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-2"
+                                value="rating-2">
+                                <label class="form-check-label" for="ratingRadioQuestion6-2">2</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-3"
+                                value="rating-3">
+                                <label class="form-check-label" for="ratingRadioQuestion6-3">3</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-4"
+                                value="rating-4">
+                                <label class="form-check-label" for="ratingRadioQuestion6-4">4</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-na"
+                                value="rating-na">
+                                <label class="form-check-label" for="ratingRadioQuestion6-na">n/a</label>
+                            </div>   
+                        </div>
+                        <label class="visually-hidden" for="ratingRadioQuestion6-comment">Comment:</label>
+                        <textarea class="form-control form-control-sm" id="ratingRadioQuestion6-comment" name="ratingRadioQuestion6" rows="3" placeholder="Write a comment here..."></textarea>
+                    </div>    
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="h5">Question #7: Explain the modal in Bootstrap</h2>
+                        <p class="small">A model is an inherited window that is layered over its parent window. This is used to augment 
+                        the user experience and add different functionalities. Model windows are created with the help of the modal plugin.</p>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                          <div class="btn-group btn-group-lg btn-black">
+                              <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7"
+                              id="ratingToggleButtonsQuestion7-1" value="rating-1" autocomplete="off">
+                              <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-1">1</label>
+                              <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7"
+                              id="ratingToggleButtonsQuestion7-2" value="rating-2" autocomplete="off">
+                              <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-2">2</label>
+                              <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7"
+                              id="ratingToggleButtonsQuestion7-3" value="rating-3" autocomplete="off">
+                              <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-3">3</label>
+                              <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7"
+                              id="ratingToggleButtonsQuestion7-4" value="rating-4" autocomplete="off">
+                              <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-4">4</label>
+                              <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7"
+                              id="ratingToggleButtonsQuestion7-na" value="rating-na" autocomplete="off">
+                              <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-na">n/a</label>
+                          </div>
+                      </div>
+                        <label class="visually-hidden" for="ratingRadioQuestion5-comment">Comment:</label>
+                        <textarea class="form-control form-control-sm" id="ratingRadioQuestion5-comment" name="ratingRadioQuestion5" rows="3" placeholder="Write a comment here..."></textarea>
+                    </div>    
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="h5">Question #8: How can you create a pills navigation menu?</h2>
+                        <p class="small">A pills navigation menu can be created by making an unordered list with the base class of 
+                            .nav the .nav-pills class.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <div class="btn-group btn-group-lg btn-black">
+                                <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8"
+                                id="ratingToggleButtonsQuestion8-1" value="rating-1" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-1">1</label>
+                                <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8"
+                                id="ratingToggleButtonsQuestion8-2" value="rating-2" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-2">2</label>
+                                <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8"
+                                id="ratingToggleButtonsQuestion8-3" value="rating-3" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-3">3</label>
+                                <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8"
+                                id="ratingToggleButtonsQuestion8-4" value="rating-4" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-4">4</label>
+                                <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8"
+                                id="ratingToggleButtonsQuestion8-na" value="rating-na" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-na">n/a</label>
+                            </div>
+                        </div>
+                        <label class="visually-hidden" for="ratingRadioQuestion5-comment">Comment:</label>
+                        <textarea class="form-control form-control-sm" id="ratingRadioQuestion5-comment" name="ratingRadioQuestion5" rows="3" placeholder="Write a comment here..."></textarea>
+                    </div>    
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="h5">Question #9: What are responsive utility classes in Bootstrap?</h2>
+                        <p class="small">Responsive utility classes in Bootstrap are a set of classes that are used to conceal or exhibit the HTML elements based on screen resolution that discerns by media query in Bootstrap.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="me-3">1</span>
+                            <label for="ratingRangeQuestion9" class="form-label visually-hidden">Range input label</label>
+                            <input type="range" class="form-range" id="ratingRangeQuestion9" min="1" max="5">
+                            <span class="ms-3">5</span> 
+                        </div>
+                        <label class="visually-hidden" for="ratingRangeQuestion9-comment">Comment:</label>
+                        <textarea class="form-control form-control-sm" id="ratingRangeQuestion9-comment" name="ratingRangeQuestion9" rows="3" placeholder="Write a comment here..."></textarea>
+                    </div>    
+                </div>
+                <hr class="my-4">
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <h2 class="h5">Question #10: What are responsive utility classes in Bootstrap?</h2>
+                        <p class="small">Responsive utility classes in Bootstrap are a set of classes that are used to conceal or exhibit the HTML elements based on screen resolution that discerns by media query in Bootstrap.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="me-3">1</span>
+                            <label for="ratingRangeQuestion10" class="form-label visually-hidden">Range input label</label>
+                            <input type="range" class="form-range" id="ratingRangeQuestion10" min="1" max="5">
+                            <span class="ms-3">5</span> 
+                        </div>
+                        <label class="visually-hidden" for="ratingRangeQuestion10-comment">Comment:</label>
+                        <textarea class="form-control form-control-sm" id="ratingRangeQuestion10-comment" name="ratingRangeQuestion10" rows="3" placeholder="Write a comment here..."></textarea>
+                    </div>    
+                </div>
+                <button type="submit" id="submitButton" class="btn btn-secondary d-block ms-auto" href="result.html">
+                    Submit
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    
+                  </button>
+                  
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <link rel="stylesheet" href="js/bootstrap.min.js"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <script>
+            var goToStep2Trigger = document.querySelector('#go-to-step-2');
+            goToStep2Trigger.addEventListener('click', function() {
+              scrollToTop();
+              setTimeout(function() {
+                var step2TabElement = document.querySelector('#step-2-tab');
+                var step2Tab = new bootstrap.Tab(step2TabElement);
+                step2Tab.show();
+              }, 1000)
+            })
+      
+            var goToStep3Trigger = document.querySelector('#go-to-step-3');
+            goToStep3Trigger.addEventListener('click', function() {
+              scrollToTop();
+              setTimeout(function() {
+                var step3TabElement = document.querySelector('#step-3-tab');
+                var step3Tab = new bootstrap.Tab(step3TabElement);
+                step3Tab.show();
+              }, 1000)
+            })
+      
+            function scrollToTop() {
+              scroll({
+                top: 0,
+                behavior: "smooth"
+              });
+            }
+      
+            var submitButton = document.querySelector('#submitButton');
+            submitButton.addEventListener('click', function() {
+              submitButton.disabled = true;
+              submitButton.querySelector('.spinner-border').classList.remove('d-none');
+              setTimeout(function() {
+                window.location.href = 'results.html';
+              }, 2000)
+            })
+
+            var submitButton = document.querySelector('#submitButton');
+            submitButton.addEventListener('click', function() {
+            submitButton.disabled = true;
+            submitButton.querySelector('.spinner-border').classList.remove('d-none');
+            setTimeout(function() {
+          window.location.href = 'result.html';
+        }, 2000)
+      })
+          </script>
+</body>
+</html>
